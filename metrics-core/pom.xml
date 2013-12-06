@@ -16,4 +16,15 @@
         production. Metrics provides a powerful toolkit of ways to measure the behavior of critical
         components in your production environment.
     </description>
+
+
+    <distributionManagement>
+     <!-- https://support.sonatype.com/entries/21283268-Configure-Maven-to-Deploy-to-Nexus -->
+     <snapshotRepository>
+      <id>deployment</id>
+      <name>Internal Releases</name>
+      <url>http://repo.quantifind.com/content/repositories/snapshots/</url>
+     </snapshotRepository>
+    </distributionManagement>
+
 </project>
